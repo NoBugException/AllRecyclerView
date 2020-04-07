@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">AllRecyclerView</string>
+
+    <string name="tag_position">position</string>
+    <string name="tag_recyclerbean">recyclerbean</string>
 </resources>
