@@ -21,6 +21,7 @@ import com.bruce.allrecyclerview.holder.TextViewHolder;
 import com.bruce.allrecyclerview.type.ItemType;
 import com.bruce.allrecyerview.adapter.MultiRecyclerViewAdapter;
 import com.bruce.allrecyerview.databean.BaseDataBean;
+import com.bruce.allrecyerview.itemdecoration.DividingLine;
 import com.bruce.allrecyerview.listener.MultiRecyclerViewListener;
 import com.bumptech.glide.Glide;
 
@@ -81,6 +82,8 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(gridLayoutManager);
 
         mRecyclerView.setHasFixedSize(true);
+
+        mRecyclerView.addItemDecoration(new DividingLine(10, Color.RED));
 
         adapter = new MultiRecyclerViewAdapter(MainActivity.this, list, new MultiRecyclerViewListener<BaseDataBean>() {
             @Override
